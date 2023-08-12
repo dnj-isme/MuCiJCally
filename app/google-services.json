@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1011555598905",
+    "firebase_url": "https://mucijcally-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mucijcally",
+    "storage_bucket": "mucijcally.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011555598905:android:f630b6ac65b5facf3343e8",
+        "android_client_info": {
+          "package_name": "edu.bluejack22_2.MuCiJCally"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011555598905-t9q976fjgjub06ptduqcj93h2uucrmgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY92dfFpzz_H_kCJ96wKXffhdPLn4NA6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011555598905-t9q976fjgjub06ptduqcj93h2uucrmgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

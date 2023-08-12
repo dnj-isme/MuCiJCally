@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    /// 1. Sign Up / Sign In
+    <string name="lbl_password">Kata Sandi</string>
+    <string name="lbl_confirm_password">Konfirmasi Kata Sandi</string>
+    <string name="lbl_sign_up">Registrasi</string>
+    <string name="lbl_sign_in">Masuk</string>
+    <string name="lbl_have_account">Sudah memiliki akun?</string>
+    <string name="lbl_not_have_account">Tidak memiliki akun?</string>
+
+    /// 2. Verify Email
+    <string name="lbl_verify">Verifikasi Email</string>
+    <string name="lbl_verify_desc">Kode konfirmasi telah dikirim ke %1$s</string>
+    <string name="lbl_verify_no_code">Tidak menerima kode?</string>
+    <string name="lbl_verify_resend"><u>Kirim ulang</u></string>
+    <string name="lbl_verify_code">Kode (6 digit)</string>
+    <string name="lbl_verify_btn">Verifikasi</string>
+    <string name="lbl_verify_change_email_btn">Ubah Email</string>
+
+    // 3. Home
+    <string name="lbl_home_collection">Koleksi kamu</string>
+    <string name="lbl_button_createmusic">Unggah musik</string>
+    <string name="lbl_button_createplaylist">Buat playlist</string>
+
+    // 4. Footer Navbar
+
+    <string name="lbl_footer_home">Beranda</string>
+    <string name="lbl_footer_explore">Eksplorasi</string>
+    <string name="lbl_footer_profile">Akun</string>
+
+    // 5. Playlist Creation
+    <string name="lbl_playlist_name">Nama playlist</string>
+    <string name="lbl_cover_image">Cover Playlist</string>
+    <string name="lbl_upload_text">Unggah</string>
+    <string name="add_to_playlist">Masukkan playlist</string>
+
+    // 6. upload Music Form
+    <string name="lbl_music_title">Judul lagu</string>
+    <string name="lbl_music_file">File lagu</string>
+
+    // general
+    <string name="lbl_back">Kembali</string>
+    <string name="notification_channel_name">Channel Musik</string>
+    <string name="notification_channel_description">Tampilkan music yang sedang dimainkan</string>
+
+    <string name="hint_explore_search">Cari lagu</string>
+
+    // playlsit detail
+    <string name="playall">Putar</string>
+
+    // Profile
+    <string name="save">Ubah</string>
+    <string name="update">Update</string>
+    <string name="change_password">Change Password</string>
+    <string name="profile">Profil</string>
+
+    <string name="old_password">Password Lama</string>
+    <string name="new_password">Password Baru</string>
+
+    // Others
+    <string name="unknown_error">Kesalahan tidak diketahui terjadi!</string>
+    <string name="empty_field">Semua form harus diisi!</string>
+    <string name="playlist_created">Playlist berhasil dibuat!</string>
+    <string name="upload_success">Berhasil mengupload</string>
+    <string name="failed_login">Tidak dapat melakukan login!</string>
+    <string name="add_playlist_notif">Berhasil menambahkan lagu ke playlist</string>
+    <string name="music_uploaded">Musik berhasil di upload!!</string>
+    <string name="resent_code">Kode berhasil dikirimkan ulang!</string>
+    <string name="email_password_empty">Input tidak boleh kosong!!</string>
+    <string name="account_updated">Akun berhasil diupdate!</string>
+    <string name="unique_account">Akun harus unik</string>
+    <string name="update_password">Password berhasil di ubah!</string>
+    <string name="empty_playlist">Playlist anda kosong!</string>
+
+    <string name="err_invalid_credential">Kredensial salah</string>
+    <string name="succ_signin">Sign in berhasil! Halo, %s!</string>
+    <string name="err_unique_username">Username harus unik!</string>
+    <string name="err_password_6char">Kata sandi harus memiliki setidaknya 6 karakter</string>
+    <string name="err_password_1dig_1alpha">Kata sandi harus memiliki setidaknya 1 angka dan 1 huruf</string>
+    <string name="email_title">Kode Verifikasi</string>
+    <string name="email_body">Kode Verifikasi anda adalah %d</string>
+    <string name="succ_update_account">Akun berhasil diupdate!</string>
+    <string name="err_conf_match">Konfirmasi tidak sama</string>
+    <string name="account_not_found">Akun tidak ditemukan!</string>
+    <string name="code_invalid">Kode yang anda masukkan salah</string>
+    <string name="account_created">Akun berhasil dibuat!</string>
+    <string name="please_wait">Mohon tunggu %d detik sebelum mengirimkan ulang kode.</string>
+
+
+</resources>

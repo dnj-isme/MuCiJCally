@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "573579693803",
+    "firebase_url": "https://tpa-mobile-cb43d-default-rtdb.firebaseio.com",
+    "project_id": "tpa-mobile-cb43d",
+    "storage_bucket": "tpa-mobile-cb43d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573579693803:android:a5a7924c86e38505b2b8ae",
+        "android_client_info": {
+          "package_name": "edu.bluejack22_2.MuCiJCally"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573579693803-ibu4mr09qroquqjs5por6drql1uoj69f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM8wVGLTCjgKuIwr4wpOmJ3_oYExub0_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573579693803-ibu4mr09qroquqjs5por6drql1uoj69f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

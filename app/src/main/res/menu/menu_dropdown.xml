@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_create_playlist"
+        android:title="@string/lbl_button_createplaylist" />
+    <item
+        android:id="@+id/menu_upload_music"
+        android:title="@string/lbl_button_createmusic" />
+</menu>

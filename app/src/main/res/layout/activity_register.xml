@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20sp"
+        tools:context=".LoginActivity">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/register_top_logo"
+            android:name="edu.bluejack22_2.MuCiJCally.TopLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout="@layout/fragment_top_logo"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/register_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/lbl_sign_up"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/register_top_logo"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.054"
+            app:layout_constraintStart_toStartOf="@+id/register_top_logo"
+            app:layout_constraintTop_toBottomOf="@+id/register_top_logo" />
+
+        <EditText
+            android:id="@+id/txt_login_username"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/rounded_input_background"
+            android:ems="10"
+            android:hint="@string/lbl_username"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="5sp"
+            android:textColorHint="#37474F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_sign_up"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/txt_register_email"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_input_background"
+            android:ems="10"
+            android:hint="@string/lbl_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="5sp"
+            android:textColorHint="#37474F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_login_username"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_register_sign_in"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/button_main"
+            android:text="@string/lbl_sign_in"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_lbl" />
+
+        <Button
+            android:id="@+id/btn_register_sign_up"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/button_main"
+            android:text="@string/lbl_sign_up"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_register_confirm"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/confirm_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_have_account"
+            android:textColor="#37474F"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register_sign_up" />
+
+        <EditText
+            android:id="@+id/txt_register_password"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_input_background"
+            android:ems="10"
+            android:hint="@string/lbl_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingHorizontal="5sp"
+            android:textColorHint="#37474F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_register_email" />
+
+        <EditText
+            android:id="@+id/txt_register_confirm"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_input_background"
+            android:ems="10"
+            android:hint="@string/lbl_confirm_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingHorizontal="5sp"
+            android:textColorHint="#37474F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_register_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

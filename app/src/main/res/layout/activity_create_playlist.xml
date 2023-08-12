@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".CreatePlaylistActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/cPlaylist_top_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_top_logo" />
+
+    <TextView
+        android:id="@+id/cPlaylist_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/lbl_button_createplaylist"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cPlaylist_top_logo" />
+
+    <TextView
+        android:id="@+id/cplaylist_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/lbl_playlist_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cPlaylist_header" />
+
+    <EditText
+        android:id="@+id/playlist_name_edtext"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_input_background"
+        android:paddingHorizontal="5sp"
+        app:layout_constraintStart_toStartOf="@+id/cplaylist_name_label"
+        app:layout_constraintTop_toBottomOf="@+id/cplaylist_name_label" />
+
+    <TextView
+        android:id="@+id/cover_image_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/lbl_cover_image"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/playlist_name_edtext"
+        app:layout_constraintTop_toBottomOf="@+id/playlist_name_edtext" />
+
+    <Button
+        android:id="@+id/upload_image_btn"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/button_main"
+        android:text="@string/lbl_upload_text"
+        app:layout_constraintBottom_toBottomOf="@+id/cover_image_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cover_image_lbl"
+        app:layout_constraintTop_toTopOf="@+id/cover_image_lbl" />
+
+    <Button
+        android:id="@+id/btn_create_playlist"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/button_main"
+        android:text="@string/lbl_button_createplaylist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upload_image_btn" />
+
+    <Button
+        android:id="@+id/btn_back_create_playlist"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/button_main"
+        android:text="@string/lbl_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create_playlist" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/lpc_cplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/footer_cplaylist"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/playing_music_component" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/footer_cplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/fragment_bottom_navbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistDetailActivity"
+    android:background="@color/grey">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/header_playlistdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_top_logo"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_playlist_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header_playlistdetail" />
+
+    <TextView
+        android:id="@+id/playlistDetail_nameLbl"
+        android:layout_width="348dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/footer_playlistdetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_playlistdetail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/playlistDetail_playAllbutton"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toBottomOf="@+id/playlistDetail_nameLbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="@+id/playlistDetail_nameLbl"
+        app:layout_constraintTop_toTopOf="@+id/playlistDetail_nameLbl"
+        app:layout_constraintVertical_bias="0.408" />
+
+    <TextView
+        android:id="@+id/playlistDetail_playAllLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playall"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/playlistDetail_playAllbutton"
+        app:layout_constraintStart_toStartOf="@+id/playlistDetail_playAllbutton"
+        app:layout_constraintTop_toBottomOf="@+id/playlistDetail_playAllbutton" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playlistdetail_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="431dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playlistDetail_nameLbl" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/lpc_playlist_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="52dp"
+        tools:layout="@layout/playing_music_component" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/footer_playlistdetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout="@layout/fragment_bottom_navbar"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
